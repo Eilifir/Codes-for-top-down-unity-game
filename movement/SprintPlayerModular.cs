@@ -24,7 +24,7 @@ public class SprintPlayerModular : MonoBehaviour
     {
         movementScript = GetComponent<PlayerMovement>();
         walkSpeed = movementScript.moveSpeed;
-	runSpeed = walkSpeed * 2f;
+		runSpeed = walkSpeed * 2f;
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class SprintPlayerModular : MonoBehaviour
     private void FixedUpdate()
     {
         if(isSprinting)
-	   movementScript.moveSpeed = runSpeed;
+       	   movementScript.moveSpeed = runSpeed;
         else
            movementScript.moveSpeed = walkSpeed;
     }
