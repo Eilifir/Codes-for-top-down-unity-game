@@ -41,6 +41,6 @@ public class PlayerSprintStandAlone : MonoBehaviour
 	      else
 		      currentSpeed = walkSpeed;
 
-        rb.velocity = moveInput * currentSpeed;
+        rb.linearVelocity = moveInput * currentSpeed;
     }
 }
